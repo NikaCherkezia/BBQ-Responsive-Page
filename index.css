@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+/* 
+=========================
+Typography
+========================= 
+*/
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    text-transform: capitalize;
+}
+
+h1 + p {
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #f18119;
+    margin-top: 0;
+    text-transform: uppercase;
+    
+}
+
+.top-text {
+    font-size: .625rem;
+    color: #f18119;
+    font-weight: 900;
+    order: -1;
+    border-top: 5px solid #f18119;
+    margin:0;
+    padding-top: 2px;
+    border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
+}
+
+.fine-print {
+    font-size: .625rem;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+
+/* 
+=========================
+Intro Section
+========================= 
+*/
+
+.intro {
+    background-color: #404040;
+    background-image: url(images/ribs.jpg);
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .25em 1em;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.main-content > *,
+.intro > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+=========================
+Form
+========================= 
+*/
+
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    padding: .25em;
+    margin-bottom: .45em;
+    border: 1px solid #404040;
+    transform: scale(1);  
+    transition: transform 250ms  
+}
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #ffa51d, #ff713b);
+    color: white;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+input:focus {
+    transform: scale(1.1);
+}
+
+
+/* 
+=========================
+MEDIA
+========================= 
+*/
+
+@media (min-width: 700px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+}
